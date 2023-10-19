@@ -10,11 +10,20 @@
 
 <body>
     <div class="container">
+        <div id="increase">Monthly Increase: <span id="increaseValue">0%</span></div>
         <h1>Electric Bill Calculator</h1>
-        <label for="kWh">Enter Consumption (kWh):</label>
+        <label for="lastBill">Enter Last Bi-Monthly Bill Total:</label>
+        <input type="number" id="lastBill" placeholder="e.g. 150">
+        <label for="kWh">Enter Current Consumption (kWh):</label>
         <input type="number" id="kWh" placeholder="e.g. 500">
         <button onclick="calculateBill()">Calculate Bill</button>
-        <div id="result"></div>
+        <div id="bill">
+            <h2>Bill Breakdown</h2>
+            <div id="tierCharge"></div>
+            <div id="standardCharge">Standard Charge: $7.50</div>
+            <div id="vat"></div>
+            <div id="total"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
