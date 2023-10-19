@@ -26,3 +26,24 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+#bill {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+#bill div {
+    margin: 10px 0;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#increase {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
