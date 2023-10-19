@@ -12,27 +12,31 @@
 <body>
 
 <div class="container">
-    <div class="card">
+<div class="card">
+    <div class="card-content col l6">
     <h1 class="center-align">Electric Bill Calculator</h1>
     <div id="increase" class="center-align red-text text-darken-2">
         Monthly Increase: <span id="increaseValue">0%</span>
     </div>
     
     <div class="input-field">
-        <input type="number" id="lastBill" placeholder="e.g. 150">
+        <input type="number" id="lastBill" placeholder="e.g. 1400.00">
         <label for="lastBill">Enter Last Bi-Monthly Bill Total:</label>
     </div>
     
     <div class="input-field">
-        <input type="number" id="kWh" placeholder="e.g. 500">
+        <input type="number" id="kWh" placeholder="e.g. 1750">
         <label for="kWh">Enter Current Consumption (kWh):</label>
     </div>
-    
-    <button class="btn waves-effect waves-light center" onclick="calculateBill()">Calculate Bill</button>
+    <div class="center">
+        <button class="btn waves-effect waves-light" onclick="calculateBill()">Calculate Bill</button>
     </div>
+    
+</div>
+</div>
     <div id="bill" class="card">
-        <div class="card-content">
-            <span class="card-title center">Bill Breakdown</span>
+        <div class="card-content center">
+            <span class="card-title">Bill Breakdown</span>
             <div id="tierCharge"></div>
             <div id="standardCharge" style="display:none;">Standard Charge: $7.50</div>
             <div id="vat"></div>
